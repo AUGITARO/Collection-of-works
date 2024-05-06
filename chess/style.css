@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 802px;
+    height: 802px;
+    border: 1px solid;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 1px solid;
+}
