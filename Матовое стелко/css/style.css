@@ -1,0 +1,60 @@
+:root {
+    --main-header-height: 100px;
+    --main-footer-height: 100px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background-color: lime;
+}
+
+.main-header .container,
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    height: var(--main-header-height);
+}
+
+main {
+    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
+}
+
+main .example .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .example .container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main .frosted-glass {
+    width: 80%;
+    height: 80%;
+    border: 1px solid #000;
+    backdrop-filter: blur(10px);
+}
+
+.main-footer {
+    background-color: navy;
+}
