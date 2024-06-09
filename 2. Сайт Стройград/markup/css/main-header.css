@@ -1,0 +1,53 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    z-index: 100;
+}
+
+.main-header .main-header-nav {
+    display: flex;
+    align-items: center;
+    height: 74px;
+    padding: 0 36px;
+    font-size: 20px;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition-duration: 300ms;
+    transition-property: background-color;
+    backdrop-filter: blur(5px);
+}
+
+.main-header .main-header-nav--active {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.main-header .main-header-nav .address {
+    margin-left: 11px;
+    font-weight: 500;
+}
+
+.main-header .main-header-nav .site-navigation {
+    display: flex;
+    margin-left: auto;
+}
+
+.main-header .main-header-nav .site-navigation .site-navigation-item:not(:first-child) {
+    margin-left: 42px;
+}
+
+.main-header .main-header-nav .phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.main-header .main-header-nav .phone-wrapper a:nth-child(1) {
+    text-decoration: underline;
+    color: #1563C0;
+}

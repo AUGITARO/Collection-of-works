@@ -1,0 +1,121 @@
+:root {
+    --overlay-transition-duration: 800ms;
+}
+
+* {
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow:
+        0 0 8px rgba(11, 35, 64, 0.06),
+        0 16px 32px rgba(11, 35, 64, 0.08),
+        0 4px 8px rgba(11, 35, 64, 0.06),
+        0 0 12px rgba(11, 35, 64, 0.06);
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.work-type {
+    padding: 100px 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.work-type .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.work-type .row:nth-child(3) {
+    margin-top: 35px;
+}
+
+.work-type .row .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 351px;
+    border-radius: 20px;
+    box-shadow:
+        0 0 8px rgba(11, 35, 64, 0.06),
+        0 16px 32px rgba(11, 35, 64, 0.08),
+        0 4px 8px rgba(11, 35, 64, 0.06),
+        0 0 12px rgba(11, 35, 64, 0.08);
+    transition-duration: 200ms;
+}
+
+.work-type .row .card:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.work-type .row .card:not(:first-child) {
+    margin-left: 35px;
+}
+
+.work-type .row .card--big {
+    width: 452px;
+}
+
+.work-type .row .card .desc {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.windows .row .card .desc {
+    margin-top: 53px;
+}
+
+.balconies .row .card .desc {
+    margin-top: 48px;
+}
+
+.balconies .row:last-child .card .desc {
+    margin-top: 16px;
+}
+
+.doors .row .card .desc,
+.blinds .row .card .desc,
+.gratings .row .card .desc,
+.repair .row .card .desc {
+    margin-top: 22px;
+}
+
+.doors .row:nth-child(3) .card .desc {
+    margin-top: 16px;
+}

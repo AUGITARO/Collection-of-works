@@ -1,0 +1,33 @@
+.main-footer {
+    color: #000;
+    font-weight: 500;
+}
+
+.main-footer .container {
+    display: flex;
+    align-items: center;
+    height: 354px;
+}
+
+.main-footer .container .row {
+    display: flex;
+    width: 100%;
+}
+
+.main-footer .container .row ul,
+.main-footer .container .row .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 90px;
+}
+
+.main-footer .container .row .logo-wrapper {
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.main-footer .container .row .logo-wrapper a {
+    color: #1563C0;
+    text-decoration: underline;
+}

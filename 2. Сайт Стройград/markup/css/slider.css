@@ -1,0 +1,78 @@
+.btn-wrapper {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 561px;
+}
+
+.btn-wrapper .next {
+    margin-left: 30px;
+}
+
+.slider {
+    display: flex;
+    margin-top: 30px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.slider .slider-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    transition-duration: 300ms;
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.left-wrapper > img {
+    border: 1px solid #000;
+}
+
+.left-wrapper .customer-details {
+    display: flex;
+    align-items: center;
+}
+
+.left-wrapper .customer-details dl {
+    margin-left: 30px;
+}
+
+.left-wrapper .customer-details dl dt {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.left-wrapper .customer-details dl dd {
+    font-size: 20px;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 531px;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+.right-wrapper p {
+    font-size: 20px;
+}
+
+.right-wrapper dl {
+    margin-top: 40px;
+}
+
+.right-wrapper dl dt {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.right-wrapper dl dd {
+    font-size: 24px;
+}
